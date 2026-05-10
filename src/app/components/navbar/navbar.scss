@@ -1,0 +1,76 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #fff8ef;
+}
+
+.logo {
+  display: flex;
+  align-items: center;  // vertical center
+  gap: 12px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+
+.logo h1 {
+  font-size: 12px;        // text size
+  font-weight: 700;       // bold
+  color: #DA291C;         // text color
+  margin: 0;              // remove default margin
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;    // spacing between letters
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 800;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color:  #DA291C;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #DA291C;
+  transition: 0.3s ease;
+}
+
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  background: #f8d400;
+  color: black;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'poppins', sans-serif;
+  cursor: pointer;
+
+}

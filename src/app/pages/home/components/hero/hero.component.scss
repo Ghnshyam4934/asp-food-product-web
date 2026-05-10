@@ -1,0 +1,169 @@
+.hero-section {
+  background: #fbf3ec;
+  padding: 80px 0;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-badge {
+  font-size: 13px;
+  font-weight: 600;
+  color: #d21f1f;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #2c1a14;
+  margin-bottom: 22px;
+}
+
+.hero-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b5a54;
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 42px;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background: #e11d1d;
+  color: #fff;
+  border: 2px solid #e11d1d;
+  box-shadow: 0px 10px 25px rgba(225, 29, 29, 0.25);
+}
+
+.btn-primary:hover {
+  background: #c41717;
+  border-color: #c41717;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #e11d1d;
+  border: 2px solid #e11d1d;
+}
+
+.btn-outline:hover {
+  background: #e11d1d;
+  color: white;
+}
+
+.hero-features {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c1a14;
+}
+
+.feature-icon {
+  font-size: 18px;
+}
+
+/* RIGHT SIDE PRODUCT CARDS */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  position: relative;
+}
+
+.product-card {
+  width: 240px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.product-card p {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #e11d1d;
+}
+
+.card-one {
+  transform: rotate(-4deg);
+}
+
+.card-two {
+  transform: rotate(6deg);
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 46px;
+  }
+
+  .hero-desc {
+    margin: 0 auto 32px auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-features {
+    justify-content: center;
+  }
+
+  .hero-right {
+    margin-top: 40px;
+  }
+}
