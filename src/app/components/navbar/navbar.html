@@ -1,9 +1,10 @@
 <nav class="navbar">
   <div class="logo">
-    <img src="assets/images/logo.png" alt="Logo">
+    <img src="assets/images/logo.png" alt="Logo" />
     <h1>ASP FOOD PRODUCTS</h1>
   </div>
 
+  <!-- Desktop Links -->
   <div class="nav-links">
     <a href="#">HOME</a>
     <a href="#">ABOUT</a>
@@ -13,5 +14,25 @@
     <a href="#">CONTACT</a>
   </div>
 
+  <!-- Desktop Button -->
   <button class="btn">Get Quote</button>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" [class.open]="menuOpen">
+  <a href="#" (click)="closeMenu()">HOME</a>
+  <a href="#" (click)="closeMenu()">ABOUT</a>
+  <a href="#" (click)="closeMenu()">PRODUCTS</a>
+  <a href="#" (click)="closeMenu()">OUR PROCESS</a>
+  <a href="#" (click)="closeMenu()">SNACKS</a>
+  <a href="#" (click)="closeMenu()">CONTACT</a>
+
+  <button class="mobile-btn" (click)="closeMenu()">Get Quote</button>
+</div>
