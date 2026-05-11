@@ -1,0 +1,176 @@
+.spice-section {
+  background: #fdecec;
+  padding: 80px 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 1350px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 25px;
+}
+
+/* FILTER BUTTONS */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  border: none;
+  padding: 9px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  color: #444;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tab-btn.active {
+  background: #d40000;
+  color: white;
+}
+
+.tab-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.product-card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: left;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.product-img {
+  width: 100%;
+  height: 240px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f6f6f6;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.product-content {
+  padding-top: 12px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.product-desc {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+/* FOOTER */
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #d40000;
+}
+
+.product-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #d40000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 850px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-img {
+    height: 170px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .tab-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .product-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,34 @@
+<section class="spice-section">
+  <div class="container">
+    <h2 class="section-title">Our Organic Spice Collection</h2>
+
+    <div class="filter-tabs">
+      <button
+        *ngFor="let cat of categories"
+        class="tab-btn"
+        [class.active]="selectedCategory === cat"
+        (click)="selectCategory(cat)"
+      >
+        {{ cat }}
+      </button>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card" *ngFor="let product of filteredProducts">
+        <div class="product-img">
+          <img [src]="product.image" [alt]="product.name" />
+        </div>
+
+        <div class="product-content">
+          <h3 class="product-title">{{ product.name }}</h3>
+          <p class="product-desc">{{ product.desc }}</p>
+
+          <div class="product-footer">
+            <span class="product-price">{{ product.price }}.00</span>
+            <a href="#" class="product-link">View Product →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
