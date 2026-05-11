@@ -1,0 +1,193 @@
+.signature-section {
+  background: #fff6f3;
+  padding: 70px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Heading */
+.heading-wrap {
+  margin-bottom: 35px;
+}
+
+.heading-wrap h2 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #2c1b18;
+  margin: 0;
+}
+
+.yellow-line {
+  width: 165px;
+  height: 5px;
+  background: #f5c400;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+/* Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+/* Card */
+.blend-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Left Image Box */
+.img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  min-height: 300px;
+}
+
+.img-box img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
+}
+
+.green-bg {
+  background-image: url("/assets/images/bg/signature-green-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dark-bg {
+  background-image: url("/assets/images/bg/signature-dark-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #ffd200;
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  letter-spacing: 0.4px;
+}
+
+/* Right Content */
+.content-box {
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-box h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+  color: #2c1b18;
+  line-height: 1.15;
+}
+
+.content-box p {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #6c5b58;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+/* Button */
+.buy-btn {
+  margin-top: 22px;
+  width: 180px;
+  background: #e11b22;
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.buy-btn:hover {
+  background: #c8141a;
+  transform: translateY(-2px);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .heading-wrap h2 {
+    font-size: 38px;
+  }
+
+  .blend-card {
+    grid-template-columns: 45% 55%;
+  }
+
+  .content-box h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 820px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blend-card {
+    grid-template-columns: 45% 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading-wrap h2 {
+    font-size: 30px;
+  }
+
+  .blend-card {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box {
+    padding: 25px;
+  }
+
+  .content-box {
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .content-box p {
+    max-width: 100%;
+  }
+
+  .buy-btn {
+    width: 100%;
+  }
+}
